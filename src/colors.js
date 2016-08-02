@@ -1,6 +1,6 @@
 var ColorBall = function(top, left, timeBetweenSteps) {
   makeDancer.apply(this, arguments);
-
+  
 };
 
 ColorBall.prototype = Object.create(makeDancer.prototype);
