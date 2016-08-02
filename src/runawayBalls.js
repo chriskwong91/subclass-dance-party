@@ -1,6 +1,6 @@
 var RunawayBalls = function(top, left, time) {
   makeDancer.apply(this, arguments);
-  $('body').on('mouseover', this.$node, this.run.bind(this));
+  this.$node.on('mouseover', this.run.bind(this));
 };
 
 RunawayBalls.prototype = Object.create(makeDancer.prototype);
@@ -12,5 +12,5 @@ RunawayBalls.prototype.run = function() {
   console.log(this);
   this.$node.animate({'top': heightPx,
                       'left': widthPx
-                      }, 400);
+                      }, 300);
 };
