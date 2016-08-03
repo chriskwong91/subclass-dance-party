@@ -14,7 +14,7 @@ body, a:link, a:visited, a:active{
 }
 .title, .addDancerButton{
   padding:5px 12px;
-  float:right;
+  /*float:right;*/
 }
 .topbar{
   height:32px;
@@ -30,14 +30,40 @@ body, a:link, a:visited, a:active{
 }
 .inputs{
   position: absolute;
-  bottom: 50px;
-  margin: 50px;
+  bottom: 15px;
+  margin: 20px;
+  text-align: center;
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 5px;
 }
 
 p{
   display: inline-block;
-  margin-right: 50px;
+  margin: 10px 15px;
 }
 input {
   width: 40px;
+}
+
+#ball{
+  border: 10px solid cyan;
+  opacity: 0.35;
+  border-radius: 10px;
+  position: absolute;
+  display: none;
+}
+.secondbar { 
+  margin: 5px;
+  text-align: center;
+}
+#polarball {
+  display: inline-block;
+  border: 2px solid white;
+  background-color: #700031;
+  border-radius: 5px;
+}
+button {
+  float: right;
+  margin: 5px;
 }

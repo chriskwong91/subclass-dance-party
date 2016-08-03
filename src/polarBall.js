@@ -26,7 +26,8 @@ PolarBall.prototype.step = function() {
   if (this.theta > 2 * Math.PI) {
     this.theta = 0;
   }
-  this.theta += Math.PI / 125;
+
+  this.theta += Math.PI / this.increment;
 };
 
 PolarBall.prototype.changeColor = function(k) {
@@ -48,3 +49,4 @@ PolarBall.prototype.changeColor = function(k) {
 PolarBall.prototype.a = 80;
 PolarBall.prototype.k = 5;
 PolarBall.prototype.b = 150;
+PolarBall.prototype.increment = 125;

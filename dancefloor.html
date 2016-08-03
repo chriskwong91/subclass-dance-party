@@ -20,14 +20,28 @@
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="GrowBalls">Grow Balls</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="BallCrawl">Ball Crawl</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="RunawayBalls">Runaway Balls</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="PolarBall">Flower Ball</a>
+      
       <button href="#" class="lineUp">Line Up!</button>
       <button href="#" class="danceFloor">Change Dancefloor</button>
+      <button href="#" class="refresh">Refresh</button>
+      <button href="#" class="centerBall">Show Ball</button>
       </div>
-      <div class='inputs'>
-        <p>Leaves: <input id='leaves' type="number" min="0" max="10" value="5"/></p>
+    <div class='secondbar'>
+      <a href="#" class="addDancerButton" id='polarball' data-dancer-maker-function-name="PolarBall">Polar Ball</a>
+    </div>
+    <div class='inputs'>
+      <p class='flowerChange'>Leaves: <span id="leaves">5</span></p>
+      <p class='flowerChange'>Size: <span id="size">4</span></p>
+      <p class='flowerChange'>Width: <span id="width">5</span></p>
+      <p class='flowerChange'>Speed: <span id="speed">5</span></p>
+    </div>
+
+
+
+
+<!--         <p>Leaves: <input id='leaves' type="number" min="0" max="10" value="5"/></p>
         <p>Size: <input id='size' type="number" min="1" max="18" value="4"/></p>
-        <p>Width: <input id='width' type="number" min="1" max="12" value="5"/></p></div>
+        <p>Width: <input id='width' type="number" min="1" max="12" value="5"/></p></div> -->
     <script src="src/init.js"></script>
   </body>
 </html>
