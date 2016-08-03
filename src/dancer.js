@@ -13,6 +13,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 
   this.step();
   this.setPosition(top, left);
+
 };
 
 makeDancer.prototype.step = function() {
@@ -28,4 +29,24 @@ makeDancer.prototype.setPosition = function(top, left) {
     left: left
   };
   this.$node.css(styleSettings);
+};
+
+makeDancer.prototype.lineUp = function() {
+  var mid = ($('body').height() / 2) - 25;
+  var middle = String(mid) + 'px';
+  var size = Math.min(window.dancers.length, 20);
+  // var increment = $('body').width() / size;
+  var width = 0;
+  window.dancers.forEach(function(dancer) {
+    if (width >= $('body').width() - 200) {
+      width = 0;
+      mid += 150;
+      middle = String(mid) + 'px';
+    }
+    width += Number(dancer.$node.css('border-width').split('px')[0]) + 50;
+    var widthString = String(width) + 'px';
+    dancer.$node.animate({'top': middle,
+                          'left': widthString});
+  });
+  
 };
